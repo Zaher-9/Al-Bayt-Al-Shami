@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البيت الشامي | Al Bayt Al Shami</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Google Model Viewer Library -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hidden SVG symbols for currency -->
+    <svg style="display: none;">
+        <symbol id="sar-symbol" viewBox="0 0 24 24" fill="currentColor">
+            <text x="12" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold">ر.س</text>
+        </symbol>
+    </svg>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home" class="logo-link">
+                    <h1>البيت الشامي</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#menu">قائمة الطعام</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+                <li><button class="lang-toggle" id="langToggle">EN</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>أهلاً بكم في البيت الشامي</h1>
+            <p>تجربة فريدة من الأطعمة الشهية والمشروبات المنعشة</p>
+            <a href="#menu" class="btn">تصفح القائمة</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">قائمتنا</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">الكل</button>
+                <button class="category-btn" data-category="fatteh">الفتة</button>
+                <button class="category-btn" data-category="meals">وجبات رئيسية</button>
+                <button class="category-btn" data-category="appetizers">مقبلات</button>
+                <button class="category-btn" data-category="drinks">مشروبات</button>
+            </div>
+            <div class="menu-items">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">من نحن</h2>
+                    <p>نحن نقدم أشهى وألذ الأطباق التقليدية بلمسة عصرية. نستخدم أفضل المكونات الطازجة لنقدم لكم تجربة طعام لا تُنسى.</p>
+                    <p>فريقنا من الطهاة المهرة يعملون باجتهاد لتقديم أفضل ما لديهم من أطباق لذيذة تنال إعجابكم.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="البيت الشامي">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>عنوان المطعم، المدينة، الدولة</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+961 XX XXX XXX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@albaytalshami.com</p>
+                    </div>
+                </div>
+                <div class="social-section">
+                    <h3>تابعنا على</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>البيت الشامي</h3>
+                    <p>أطيب الأطعمة وألذ المشروبات</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#menu">قائمة الطعام</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>ساعات العمل</h4>
+                    <p>السبت - الخميس: 10 صباحاً - 12 منتصف الليل</p>
+                    <p>الجمعة: 12 ظهراً - 12 منتصف الليل</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 البيت الشامي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 3D Model Viewer Modal -->
+    <div id="model-viewer-modal" class="model-viewer-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="back-button" id="backToMenu">
+                    <i class="fas fa-arrow-right"></i>
+                    العودة للقائمة
+                </button>
+            </div>
+            <div class="selected-item-card" id="selectedItemCard">
+                <!-- Selected item will be displayed here -->
+            </div>
+            <div class="viewer-container">
+                <model-viewer
+                    id="food-3d-viewer"
+                    loading="lazy"
+                    reveal="auto"
+                    camera-controls
+                    touch-action="pan-y"
+                    shadow-intensity="2"
+                    auto-rotate
+                    auto-rotate-delay="3000"
+                    exposure="1"
+                    style="width: 100%; height: 400px; --ar-button-position: none; --ar-prompt-display: none; background-color: #f0f0f0;"
+                >
+                </model-viewer>
+            </div>
+            <div class="ar-button-container">
+                <button id="ar-button" class="ar-button">
+                    <i class="fas fa-cube"></i>
+                    عرض على الطاولة
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="3d-viewer.js"></script>
+</body>
+</html>
