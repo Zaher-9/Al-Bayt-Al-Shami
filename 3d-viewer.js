@@ -115,11 +115,11 @@ class ModelViewer3D {
         
         const allergenIcons = this.currentItem.allergens.map(allergen => {
             const iconMap = {
-                'so2': '<img src="مسببات الحساسية/Icons without allergens - colour_So2.png" alt="SO2" />',
-                'milk': '<img src="مسببات الحساسية/Icons without allergens - colour_milk.png" alt="Milk" />',
-                'gluten': '<img src="مسببات الحساسية/Icons without allergens - colour_Gluten.png" alt="Gluten" />',
-                'nuts': '<img src="مسببات الحساسية/Icons without allergens - colour_Treenuts.png" alt="Nuts" />',
-                'egg': '<img src="مسببات الحساسية/Icons without allergens - colour_egg.png" alt="Egg" />'
+                'so2': '<img src="allergens/Icons without allergens - colour_So2.png" alt="SO2" />',
+                'milk': '<img src="allergens/Icons without allergens - colour_milk.png" alt="Milk" />',
+                'gluten': '<img src="allergens/Icons without allergens - colour_Gluten.png" alt="Gluten" />',
+                'nuts': '<img src="allergens/Icons without allergens - colour_Treenuts.png" alt="Nuts" />',
+                'egg': '<img src="allergens/Icons without allergens - colour_egg.png" alt="Egg" />'
             };
             const tooltipMap = {
                 'ar': {
